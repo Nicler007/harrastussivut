@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tervetuloa nettisivuilleni</title>
   </head>
+  <link 
+  href="style.css"
+  rel="stylesheet"/>
   <body>
     <header>
         <h1 id="vaihtuva-otsikko">Tervetuloa nettisivuilleni</h1>
@@ -33,15 +36,15 @@
         <li>Mikkelin Powerissa Tet-harjoittelija noin. 4vk yhteensä</li> 
         </section>
       </main>
-    <script>
-      var otsikkoElementti = document.getElementById("vaihtuva-otsikko");
-      var varit = ["red", "green", "blue", "orange", "purple"]; 
-      var indeksi = 0;
-      function vaihdaVari() {
-          otsikkoElementti.style.color = varit[indeksi];
-          indeksi = (indeksi + 1) % varit.length; 
-      }
-      setInterval(vaihdaVari, 600); 
-  </script>
+      <script>
+        var otsikkoElementti = document.getElementById("vaihtuva-otsikko");
+        var varit = ["red", "green", "blue", "orange", "purple"]; 
+        var indeksi = 0;
+        function vaihdaVari() {
+            otsikkoElementti.style.color = varit[indeksi];
+            indeksi = (indeksi + 1) % varit.length; 
+        }
+        setInterval(vaihdaVari, 600); 
+    </script>
   </body>
 </html>
